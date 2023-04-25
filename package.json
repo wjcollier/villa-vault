@@ -1,12 +1,13 @@
 {
 	"name": "property-app",
 	"version": "0.1.0",
-	"private": true,
+	"homepage": "https://wjcollier.github.io/villa-vault",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"deploy": "gh-pages -d out"
 	},
 	"dependencies": {
 		"@chakra-ui/react": "^1.6.8",
