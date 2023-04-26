@@ -5,9 +5,9 @@ const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
 	reactStrictMode: true,
 	images: {
-		domains: ['bayut-production.s3.eu-central-1.amazonaws.com'],
 		loader: 'cloudinary',
-		path: 'https://res.cloudinary.com/dhqnraex6/image/upload/',
+		path: `https://res.cloudinary.com/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload/`,
+		domains: [`${process.env.CLOUDINARY_CLOUD_NAME}.cloudinary.com`],
 	},
 	basePath: isProd ? '/villa-vault' : '',
 	assetPrefix: isProd ? '/villa-vault/' : '',
