@@ -4,6 +4,7 @@
 	"homepage": "https://wjcollier.github.io/villa-vault",
 	"scripts": {
 		"dev": "next dev",
+		"predeploy": "next build",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
