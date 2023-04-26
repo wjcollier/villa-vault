@@ -1,0 +1,3 @@
+{
+	"builds": [{ "src": "_redirects", "use": "@vercel/static" }]
+}
